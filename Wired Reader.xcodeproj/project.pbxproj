@@ -12,7 +12,6 @@
 		DE61D09B240ADFD8008F547C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE61D09A240ADFD8008F547C /* WebViewController.swift */; };
 		DEA64786240AA96400CA7F1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA64785240AA96400CA7F1C /* AppDelegate.swift */; };
 		DEA64788240AA96400CA7F1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA64787240AA96400CA7F1C /* SceneDelegate.swift */; };
-		DEA6478A240AA96400CA7F1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA64789240AA96400CA7F1C /* ViewController.swift */; };
 		DEA6478F240AA96500CA7F1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA6478E240AA96500CA7F1C /* Assets.xcassets */; };
 		DEA64792240AA96500CA7F1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA64790240AA96500CA7F1C /* LaunchScreen.storyboard */; };
 		DEA6479D240AA96500CA7F1C /* Wired_ReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA6479C240AA96500CA7F1C /* Wired_ReaderTests.swift */; };
@@ -48,7 +47,6 @@
 		DEA64782240AA96400CA7F1C /* Wired Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wired Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA64785240AA96400CA7F1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEA64787240AA96400CA7F1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DEA64789240AA96400CA7F1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DEA6478E240AA96500CA7F1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEA64791240AA96500CA7F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEA64793240AA96500CA7F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 				DEA64793240AA96500CA7F1C /* Info.plist */,
 				DEA64785240AA96400CA7F1C /* AppDelegate.swift */,
 				DEA64787240AA96400CA7F1C /* SceneDelegate.swift */,
-				DEA64789240AA96400CA7F1C /* ViewController.swift */,
 				DEA6478E240AA96500CA7F1C /* Assets.xcassets */,
 				DEA647C7240AD48900CA7F1C /* Extensions */,
 				DEA647B3240AB3DB00CA7F1C /* Feed */,
@@ -314,7 +311,6 @@
 			files = (
 				DE61D099240ADFA1008F547C /* WebController.swift in Sources */,
 				DEA647B2240AAF6200CA7F1C /* Feed+Parser.swift in Sources */,
-				DEA6478A240AA96400CA7F1C /* ViewController.swift in Sources */,
 				DEA647C9240AD4A000CA7F1C /* UITableView.swift in Sources */,
 				DEA647B0240AACA200CA7F1C /* Feed+Request.swift in Sources */,
 				DEA647AE240AAC8600CA7F1C /* Feed.swift in Sources */,

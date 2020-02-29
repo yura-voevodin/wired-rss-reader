@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7ph-Ba-vIm">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Web View Controller-->
+        <scene sceneID="eXP-SM-VYy">
+            <objects>
+                <viewController id="7ph-Ba-vIm" customClass="WebViewController" customModule="Wired_Reader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wtn-N9-8GC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RYz-Go-tdT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <connections>
+                                    <segue destination="mbJ-m4-y0v" kind="embed" identifier="webView" id="ht1-KC-WLS"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="RYz-Go-tdT" firstAttribute="top" secondItem="Wtn-N9-8GC" secondAttribute="top" id="2d3-Hb-ntv"/>
+                            <constraint firstItem="b2J-gg-6Yb" firstAttribute="trailing" secondItem="RYz-Go-tdT" secondAttribute="trailing" id="jv4-9x-F9g"/>
+                            <constraint firstItem="RYz-Go-tdT" firstAttribute="leading" secondItem="b2J-gg-6Yb" secondAttribute="leading" id="nHi-Oa-SMb"/>
+                            <constraint firstItem="RYz-Go-tdT" firstAttribute="bottom" secondItem="Wtn-N9-8GC" secondAttribute="bottom" id="rgT-Em-vRG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b2J-gg-6Yb"/>
+                    </view>
+                    <connections>
+                        <outlet property="webContainerView" destination="RYz-Go-tdT" id="Ueq-ae-sL2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hek-RP-E9h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45" y="116"/>
+        </scene>
+        <!--Web Controller-->
+        <scene sceneID="JWI-mq-lRK">
+            <objects>
+                <viewController id="mbJ-m4-y0v" customClass="WebController" customModule="Wired_Reader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fwl-5n-Ec0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z95-Na-KxI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45" y="853"/>
+        </scene>
+    </scenes>
+</document>

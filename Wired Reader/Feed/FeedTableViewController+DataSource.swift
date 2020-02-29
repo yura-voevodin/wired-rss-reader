@@ -14,21 +14,24 @@ extension FeedTableViewController {
 
         var items: [Feed.Item] = []
 
-        func loadItems(_ completion: @escaping (() -> Void)) {
+        func loadItems(_ completion: @escaping ((_ error: Error?) -> Void)) {
             Feed.loadRSS { [weak self] (result) in
                 DispatchQueue.main.async {
-                    self?.process(result)
-                    completion()
+                    self?.process(result, completion)
                 }
             }
         }
 
-        private func process(_ result: Result<[Feed.Item], Error>) {
+        private func process(_ result: Result<[Feed.Item], Error>, _ completion: @escaping ((_ error: Error?) -> Void)) {
             switch result {
-            case .failure:
+
+            case .failure(let error):
                 items = []
+                completion(error)
+
             case .success(let items):
                 self.items = items
+                completion(nil)
             }
         }
     }

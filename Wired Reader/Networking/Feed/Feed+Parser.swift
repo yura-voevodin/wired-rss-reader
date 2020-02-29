@@ -16,12 +16,15 @@ extension Feed {
 
         private var parser: XMLParser
 
+        /// Array of parser items
         var items: [Item] = []
-        private var currentItem: Item? = nil
+
+        /// For parse the current item
         private var currentKey: Item.Key? = nil
 
-        private var parsedData: [[String: String]] = []
-        private var currentData: [String: String] = [:]
+        // Arrays of parsed data
+        private var parsedData: [[Item.Key: String]] = []
+        private var currentData: [Item.Key: String] = [:]
 
         // MARK: - Init
 
@@ -31,14 +34,14 @@ extension Feed {
 
         // MARK: - Parse
 
-        func parse() {
+        func parse() -> [Item] {
             parser.delegate = self
             parser.parse()
 
-            parsedData.forEach { (data) in
-                print("")
-                print(data)
+            let items = parsedData.compactMap { (data) in
+                return Item(data: data)
             }
+            return items
         }
     }
 }
@@ -61,7 +64,7 @@ extension Feed.Parser: XMLParserDelegate {
 
         // URL for thumbnail
         if key == .thumbnail {
-            currentData[key.rawValue] = attributeDict["url"]
+            currentData[key] = attributeDict["url"]
         }
     }
 
@@ -70,7 +73,14 @@ extension Feed.Parser: XMLParserDelegate {
         switch key {
 
         case .description, .link, .title:
-            currentData[key.rawValue] = string
+            let value = string.trimmingCharacters(in: .whitespaces)
+            if !value.isEmpty {
+                if let previousData = currentData[key] {
+                    currentData[key] = previousData + value
+                } else {
+                    currentData[key] = value
+                }
+            }
 
         default:
             break

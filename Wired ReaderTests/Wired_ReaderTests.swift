@@ -15,8 +15,15 @@ class Wired_ReaderTests: XCTestCase {
         let expectations = expectation(description: "Feed")
 
         Feed.loadRSS { (result) in
-            
-            expectations.fulfill()
+
+            switch result {
+
+            case .failure:
+                break
+
+            case .success:
+                expectations.fulfill()
+            }
         }
 
         wait(for: [expectations], timeout: 5)

@@ -3,14 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		DEA64786240AA96400CA7F1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA64785240AA96400CA7F1C /* AppDelegate.swift */; };
 		DEA64788240AA96400CA7F1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA64787240AA96400CA7F1C /* SceneDelegate.swift */; };
 		DEA6478A240AA96400CA7F1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA64789240AA96400CA7F1C /* ViewController.swift */; };
-		DEA6478D240AA96400CA7F1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA6478B240AA96400CA7F1C /* Main.storyboard */; };
 		DEA6478F240AA96500CA7F1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA6478E240AA96500CA7F1C /* Assets.xcassets */; };
 		DEA64792240AA96500CA7F1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA64790240AA96500CA7F1C /* LaunchScreen.storyboard */; };
 		DEA6479D240AA96500CA7F1C /* Wired_ReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA6479C240AA96500CA7F1C /* Wired_ReaderTests.swift */; };
@@ -20,6 +19,14 @@
 		DEA647B0240AACA200CA7F1C /* Feed+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA647AF240AACA200CA7F1C /* Feed+Request.swift */; };
 		DEA647B2240AAF6200CA7F1C /* Feed+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA647B1240AAF6200CA7F1C /* Feed+Parser.swift */; };
 		DEA647B5240AB3E700CA7F1C /* Feed+Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA647B4240AB3E700CA7F1C /* Feed+Item.swift */; };
+		DEA647B7240AC30700CA7F1C /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA647B6240AC30700CA7F1C /* Feed.storyboard */; };
+		DEA647BB240AC3CD00CA7F1C /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA647BA240AC3CD00CA7F1C /* FeedTableViewController.swift */; };
+		DEA647BD240AC40E00CA7F1C /* FeedTableViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA647BC240AC40E00CA7F1C /* FeedTableViewController+DataSource.swift */; };
+		DEA647C1240AD3EE00CA7F1C /* FeedItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA647C0240AD3EE00CA7F1C /* FeedItemTableViewCell.swift */; };
+		DEA647C4240AD45900CA7F1C /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA647C3240AD45900CA7F1C /* NibLoadableView.swift */; };
+		DEA647C6240AD47300CA7F1C /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA647C5240AD47300CA7F1C /* ReusableView.swift */; };
+		DEA647C9240AD4A000CA7F1C /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA647C8240AD4A000CA7F1C /* UITableView.swift */; };
+		DEA647CF240AD75C00CA7F1C /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = DEA647CE240AD75C00CA7F1C /* AlamofireImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +44,6 @@
 		DEA64785240AA96400CA7F1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEA64787240AA96400CA7F1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DEA64789240AA96400CA7F1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DEA6478C240AA96400CA7F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DEA6478E240AA96500CA7F1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEA64791240AA96500CA7F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEA64793240AA96500CA7F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +56,13 @@
 		DEA647AF240AACA200CA7F1C /* Feed+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feed+Request.swift"; sourceTree = "<group>"; };
 		DEA647B1240AAF6200CA7F1C /* Feed+Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feed+Parser.swift"; sourceTree = "<group>"; };
 		DEA647B4240AB3E700CA7F1C /* Feed+Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feed+Item.swift"; sourceTree = "<group>"; };
+		DEA647B6240AC30700CA7F1C /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
+		DEA647BA240AC3CD00CA7F1C /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		DEA647BC240AC40E00CA7F1C /* FeedTableViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedTableViewController+DataSource.swift"; sourceTree = "<group>"; };
+		DEA647C0240AD3EE00CA7F1C /* FeedItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemTableViewCell.swift; sourceTree = "<group>"; };
+		DEA647C3240AD45900CA7F1C /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		DEA647C5240AD47300CA7F1C /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		DEA647C8240AD4A000CA7F1C /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +109,11 @@
 				DEA64787240AA96400CA7F1C /* SceneDelegate.swift */,
 				DEA64789240AA96400CA7F1C /* ViewController.swift */,
 				DEA6478E240AA96500CA7F1C /* Assets.xcassets */,
+				DEA647C7240AD48900CA7F1C /* Extensions */,
 				DEA647B3240AB3DB00CA7F1C /* Feed */,
 				DEA64790240AA96500CA7F1C /* LaunchScreen.storyboard */,
-				DEA6478B240AA96400CA7F1C /* Main.storyboard */,
 				DEA647A7240AAAF300CA7F1C /* Networking */,
+				DEA647BE240AD3C700CA7F1C /* UI Subclasses */,
 			);
 			path = "Wired Reader";
 			sourceTree = "<group>";
@@ -136,9 +150,46 @@
 		DEA647B3240AB3DB00CA7F1C /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				DEA647B6240AC30700CA7F1C /* Feed.storyboard */,
 				DEA647B4240AB3E700CA7F1C /* Feed+Item.swift */,
+				DEA647BA240AC3CD00CA7F1C /* FeedTableViewController.swift */,
+				DEA647BC240AC40E00CA7F1C /* FeedTableViewController+DataSource.swift */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		DEA647BE240AD3C700CA7F1C /* UI Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				DEA647BF240AD3CF00CA7F1C /* Table View Cells */,
+				DEA647C2240AD44900CA7F1C /* Views */,
+			);
+			path = "UI Subclasses";
+			sourceTree = "<group>";
+		};
+		DEA647BF240AD3CF00CA7F1C /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DEA647C0240AD3EE00CA7F1C /* FeedItemTableViewCell.swift */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		DEA647C2240AD44900CA7F1C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEA647C3240AD45900CA7F1C /* NibLoadableView.swift */,
+				DEA647C5240AD47300CA7F1C /* ReusableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEA647C7240AD48900CA7F1C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DEA647C8240AD4A000CA7F1C /* UITableView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +258,9 @@
 				Base,
 			);
 			mainGroup = DEA64779240AA96400CA7F1C;
+			packageReferences = (
+				DEA647CD240AD75C00CA7F1C /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = DEA64783240AA96400CA7F1C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -224,7 +278,7 @@
 			files = (
 				DEA64792240AA96500CA7F1C /* LaunchScreen.storyboard in Resources */,
 				DEA6478F240AA96500CA7F1C /* Assets.xcassets in Resources */,
-				DEA6478D240AA96400CA7F1C /* Main.storyboard in Resources */,
+				DEA647B7240AC30700CA7F1C /* Feed.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,11 +298,17 @@
 			files = (
 				DEA647B2240AAF6200CA7F1C /* Feed+Parser.swift in Sources */,
 				DEA6478A240AA96400CA7F1C /* ViewController.swift in Sources */,
+				DEA647C9240AD4A000CA7F1C /* UITableView.swift in Sources */,
 				DEA647B0240AACA200CA7F1C /* Feed+Request.swift in Sources */,
 				DEA647AE240AAC8600CA7F1C /* Feed.swift in Sources */,
 				DEA647B5240AB3E700CA7F1C /* Feed+Item.swift in Sources */,
+				DEA647C6240AD47300CA7F1C /* ReusableView.swift in Sources */,
 				DEA647AB240AAB5D00CA7F1C /* NetworkClient.swift in Sources */,
 				DEA64786240AA96400CA7F1C /* AppDelegate.swift in Sources */,
+				DEA647BB240AC3CD00CA7F1C /* FeedTableViewController.swift in Sources */,
+				DEA647C1240AD3EE00CA7F1C /* FeedItemTableViewCell.swift in Sources */,
+				DEA647C4240AD45900CA7F1C /* NibLoadableView.swift in Sources */,
+				DEA647BD240AC40E00CA7F1C /* FeedTableViewController+DataSource.swift in Sources */,
 				DEA647A9240AAB4C00CA7F1C /* NetworkRequest.swift in Sources */,
 				DEA64788240AA96400CA7F1C /* SceneDelegate.swift in Sources */,
 			);
@@ -273,14 +333,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DEA6478B240AA96400CA7F1C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DEA6478C240AA96400CA7F1C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DEA64790240AA96500CA7F1C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

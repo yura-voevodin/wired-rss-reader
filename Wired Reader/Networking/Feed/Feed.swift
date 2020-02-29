@@ -10,22 +10,24 @@ import Foundation
 
 class Feed: NetworkClient {
 
-    static func loadRSS(_ completion: @escaping ((Result<Bool, Error>) -> Void)) {
+    static func loadRSS(_ completion: @escaping ((Result<[Item], Error>) -> Void)) {
         let request = Request(kind: .rss).buildURLRequest()
 
         let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let error = error {
                 completion(.failure(error))
+
             } else if let data = data {
-                process(data)
-                completion(.success(true))
+                let items = process(data)
+                completion(.success(items))
             }
         }
         dataTask.resume()
     }
 
-    private static func process(_ data: Data) {
+    private static func process(_ data: Data) -> [Item] {
         let parser = Parser(data: data)
-        parser.parse()
+        let items = parser.parse()
+        return items
     }
 }

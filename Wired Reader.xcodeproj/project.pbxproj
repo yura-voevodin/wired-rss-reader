@@ -14,6 +14,12 @@
 		DEA6478F240AA96500CA7F1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA6478E240AA96500CA7F1C /* Assets.xcassets */; };
 		DEA64792240AA96500CA7F1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA64790240AA96500CA7F1C /* LaunchScreen.storyboard */; };
 		DEA6479D240AA96500CA7F1C /* Wired_ReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA6479C240AA96500CA7F1C /* Wired_ReaderTests.swift */; };
+		DEA647A9240AAB4C00CA7F1C /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA647A8240AAB4C00CA7F1C /* NetworkRequest.swift */; };
+		DEA647AB240AAB5D00CA7F1C /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA647AA240AAB5D00CA7F1C /* NetworkClient.swift */; };
+		DEA647AE240AAC8600CA7F1C /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA647AD240AAC8600CA7F1C /* Feed.swift */; };
+		DEA647B0240AACA200CA7F1C /* Feed+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA647AF240AACA200CA7F1C /* Feed+Request.swift */; };
+		DEA647B2240AAF6200CA7F1C /* Feed+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA647B1240AAF6200CA7F1C /* Feed+Parser.swift */; };
+		DEA647B5240AB3E700CA7F1C /* Feed+Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA647B4240AB3E700CA7F1C /* Feed+Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,12 @@
 		DEA64798240AA96500CA7F1C /* Wired ReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wired ReaderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA6479C240AA96500CA7F1C /* Wired_ReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wired_ReaderTests.swift; sourceTree = "<group>"; };
 		DEA6479E240AA96500CA7F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEA647A8240AAB4C00CA7F1C /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		DEA647AA240AAB5D00CA7F1C /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		DEA647AD240AAC8600CA7F1C /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		DEA647AF240AACA200CA7F1C /* Feed+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feed+Request.swift"; sourceTree = "<group>"; };
+		DEA647B1240AAF6200CA7F1C /* Feed+Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feed+Parser.swift"; sourceTree = "<group>"; };
+		DEA647B4240AB3E700CA7F1C /* Feed+Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feed+Item.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +91,15 @@
 		DEA64784240AA96400CA7F1C /* Wired Reader */ = {
 			isa = PBXGroup;
 			children = (
+				DEA64793240AA96500CA7F1C /* Info.plist */,
 				DEA64785240AA96400CA7F1C /* AppDelegate.swift */,
 				DEA64787240AA96400CA7F1C /* SceneDelegate.swift */,
 				DEA64789240AA96400CA7F1C /* ViewController.swift */,
-				DEA6478B240AA96400CA7F1C /* Main.storyboard */,
 				DEA6478E240AA96500CA7F1C /* Assets.xcassets */,
+				DEA647B3240AB3DB00CA7F1C /* Feed */,
 				DEA64790240AA96500CA7F1C /* LaunchScreen.storyboard */,
-				DEA64793240AA96500CA7F1C /* Info.plist */,
+				DEA6478B240AA96400CA7F1C /* Main.storyboard */,
+				DEA647A7240AAAF300CA7F1C /* Networking */,
 			);
 			path = "Wired Reader";
 			sourceTree = "<group>";
@@ -97,6 +111,34 @@
 				DEA6479E240AA96500CA7F1C /* Info.plist */,
 			);
 			path = "Wired ReaderTests";
+			sourceTree = "<group>";
+		};
+		DEA647A7240AAAF300CA7F1C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DEA647AA240AAB5D00CA7F1C /* NetworkClient.swift */,
+				DEA647A8240AAB4C00CA7F1C /* NetworkRequest.swift */,
+				DEA647AC240AAC7A00CA7F1C /* Feed */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DEA647AC240AAC7A00CA7F1C /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				DEA647AD240AAC8600CA7F1C /* Feed.swift */,
+				DEA647B1240AAF6200CA7F1C /* Feed+Parser.swift */,
+				DEA647AF240AACA200CA7F1C /* Feed+Request.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		DEA647B3240AB3DB00CA7F1C /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				DEA647B4240AB3E700CA7F1C /* Feed+Item.swift */,
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +242,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEA647B2240AAF6200CA7F1C /* Feed+Parser.swift in Sources */,
 				DEA6478A240AA96400CA7F1C /* ViewController.swift in Sources */,
+				DEA647B0240AACA200CA7F1C /* Feed+Request.swift in Sources */,
+				DEA647AE240AAC8600CA7F1C /* Feed.swift in Sources */,
+				DEA647B5240AB3E700CA7F1C /* Feed+Item.swift in Sources */,
+				DEA647AB240AAB5D00CA7F1C /* NetworkClient.swift in Sources */,
 				DEA64786240AA96400CA7F1C /* AppDelegate.swift in Sources */,
+				DEA647A9240AAB4C00CA7F1C /* NetworkRequest.swift in Sources */,
 				DEA64788240AA96400CA7F1C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,3 +12,6 @@ Use the following source for the RSS feed: https://www.wired.com/feed/rss
 - iOS 11+
 - Swift 5
 You can use any external frameworks/libraries if needed
+
+![iPhone](https://github.com/yura-voevodin/wired-rss-reader/raw/master/iPhone.png)
+![iPad](https://github.com/yura-voevodin/wired-rss-reader/raw/master/iPad.png)
